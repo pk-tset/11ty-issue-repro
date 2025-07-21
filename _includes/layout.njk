@@ -1,0 +1,24 @@
+---
+title: <untitled>
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/main.css">
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				{%- for name, item in infoItems -%}
+					<tr>
+						<th>{{ name }}</th>
+						<td>{{ item }}</td>
+					</tr>
+				{%- endfor -%}
+			</tbody>
+		</table>
+	</body>
+</html>
