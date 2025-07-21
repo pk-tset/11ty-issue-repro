@@ -1,12 +1,7 @@
 import path from "node:path";
 import * as sass from "sass";
-import yaml from "js-yaml";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addDataExtension("yml", (ymlcontents) => {
-		return yaml.load(ymlcontents);
-	});
-
 	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
